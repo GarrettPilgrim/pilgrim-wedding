@@ -24,7 +24,7 @@ const Countdown = () => {
 
   return (
     <CountdownStyle>
-      <Section title="Countdown" />
+      <Section title="" />
       <div className="flex">
         <div>
           <h3>Days</h3>
