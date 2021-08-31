@@ -36,7 +36,6 @@ const GlobalStyles = createGlobalStyle`
   h1, h2, h3, h4, h5, p, a {
     font-family: ${theme.font.serif};
     color: ${theme.color.light};
-    max-width: 60ch;
   }
 
   p {

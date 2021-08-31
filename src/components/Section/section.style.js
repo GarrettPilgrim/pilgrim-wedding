@@ -6,6 +6,7 @@ const SectionStyle = styled.section`
 
   * {
     grid-column: 2 / 3;
+    max-width: 60ch;
   }
 
   h2 {

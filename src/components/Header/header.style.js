@@ -55,6 +55,24 @@ const HeaderStyle = styled.header`
     text-decoration: none;
   }
 
+  svg {
+    fill: ${theme.color.light};
+  }
+
+  .flower-one {
+    position: absolute;
+    top: 25%;
+    width: 10%;
+    transform: scaleY(-1);
+  }
+
+  .flower-two {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    width: 20%;
+  }
+
   @media (max-width: 450px) {
     .img {
       background: 35% 100% / cover no-repeat url(${img});

@@ -1,6 +1,8 @@
 import React from "react";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import HeaderStyle from "./header.style";
+import FlowerOne from "../../svg/FlowerOne.svg";
+import FlowerTwo from "../../svg/FlowerTwo.svg";
 
 const Header = () => {
   return (
@@ -26,6 +28,8 @@ const Header = () => {
             </li>
           </ul>
         </nav>
+        <FlowerOne class="flower-one" />
+        <FlowerTwo class="flower-two" />
       </HeaderStyle>
     </>
   );
