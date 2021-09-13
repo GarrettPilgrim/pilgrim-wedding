@@ -4,6 +4,7 @@ import Section from "../components/Section/Section";
 import Countdown from "../components/Countdown/Countdown";
 
 import GlobalStyles from "../styles/global";
+import Footer from "../Footer/Footer";
 
 const IndexPage = () => {
   return (
@@ -20,11 +21,9 @@ const IndexPage = () => {
         </p>
       </Section>
       <Section>
-        <h2>RSVP</h2>
-      </Section>
-      <Section>
         <h2>Registry</h2>
       </Section>
+      <Footer></Footer>
     </>
   );
 };

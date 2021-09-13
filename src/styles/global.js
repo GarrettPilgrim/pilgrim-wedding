@@ -33,12 +33,12 @@ const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  h1, h2, h3, h4, h5, p, a {
+  h1, h2, h3, h4, h5, p, a, fieldset {
     font-family: ${theme.font.serif};
     color: ${theme.color.light};
   }
 
-  p {
+  p, label {
     font-family: ${theme.font.sans};
   }
 `;
