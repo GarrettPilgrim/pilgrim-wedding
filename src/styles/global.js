@@ -41,6 +41,21 @@ const GlobalStyles = createGlobalStyle`
   p, label {
     font-family: ${theme.font.sans};
   }
+
+
+  @keyframes wipe-enter {
+    0% {
+      transform: scale(0, 0.025);
+    }
+
+    50% {
+      transform: scale(1, .025);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    
+  }
 `;
 
 export default GlobalStyles;

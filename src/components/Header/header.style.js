@@ -25,13 +25,13 @@ const HeaderStyle = styled.header`
     padding: 1rem 2rem;
     margin: 0;
     font-size: 10vw;
-    z-index: 90;
+    z-index: 10;
   }
 
   nav {
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    z-index: 100;
+    z-index: 50;
   }
 
   ul {

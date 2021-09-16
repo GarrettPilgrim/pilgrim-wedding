@@ -1,16 +1,21 @@
 import styled from "styled-components";
-import theme from "../styles/theme";
+import theme from "../../styles/theme";
 
 const FooterStyle = styled.footer`
-  height: 30rem;
+  position: relative;
+  margin-top: 3rem;
+  padding: 8rem 0;
   background: ${theme.color.secondary};
+  z-index: 10;
+
   svg {
     fill: ${theme.color.light};
   }
+
   .flower-three {
-    position: relative;
-    top: -3rem;
-    width: 15%;
+    position: absolute;
+    top: -5rem;
+    width: calc(10rem + 10%);
     transform: rotate(130deg);
   }
 `;
