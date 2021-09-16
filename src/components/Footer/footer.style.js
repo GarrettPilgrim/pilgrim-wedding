@@ -5,7 +5,16 @@ const FooterStyle = styled.footer`
   position: relative;
   margin-top: 3rem;
   padding: 8rem 0;
-  background: ${theme.color.secondary};
+  background: radial-gradient(
+      ellipse at bottom right,
+      ${theme.color.primary} 70%,
+      transparent 70%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      ${theme.color.secondary} 70%,
+      transparent 70%
+    );
   z-index: 10;
 
   svg {

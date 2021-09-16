@@ -29,6 +29,7 @@ const HeaderStyle = styled.header`
   }
 
   nav {
+    position: relative;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     z-index: 50;

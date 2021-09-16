@@ -6,8 +6,10 @@ const FormStyle = styled.div`
     max-width: 60ch;
     margin: 0 auto;
     padding: 3rem;
-    background: ${theme.color.dark};
+    background: rgba(73, 88, 103, 0.5);
     border: none;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(1rem);
   }
 
   legend {
