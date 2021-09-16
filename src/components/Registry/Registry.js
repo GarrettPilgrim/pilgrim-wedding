@@ -7,8 +7,9 @@ const Registry = () => {
   return (
     <>
       <RegistryStyle>
-        <AnchorLink>Amazon</AnchorLink>
-        <AnchorLink>Target</AnchorLink>
+        <h2>Registry</h2>
+        <AnchorLink to="https://www.amazon.com/">Amazon</AnchorLink>
+        <AnchorLink to="https://www.target.com/">Target</AnchorLink>
       </RegistryStyle>
     </>
   );

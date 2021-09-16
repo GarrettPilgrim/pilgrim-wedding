@@ -9,6 +9,10 @@ const SectionStyle = styled.section`
     max-width: 60ch;
   }
 
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
   h2 {
     justify-self: start;
     margin: 8rem 0 0 0;
