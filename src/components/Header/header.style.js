@@ -54,6 +54,12 @@ const HeaderStyle = styled.header`
     padding: 1.5rem 1rem;
     font-size: 1rem;
     text-decoration: none;
+    backdrop-filter: blur(1rem);
+  }
+
+  a:hover {
+    background: ${theme.color.primary};
+    font-size: 110%;
   }
 
   svg {
