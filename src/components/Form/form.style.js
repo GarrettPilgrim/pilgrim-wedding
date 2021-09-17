@@ -6,7 +6,7 @@ const FormStyle = styled.div`
     max-width: 60ch;
     margin: 0 auto;
     padding: 3rem;
-    background: rgba(73, 88, 103, 0.5);
+    background: ${theme.color.darkTransparent};
     border: none;
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(1rem);
