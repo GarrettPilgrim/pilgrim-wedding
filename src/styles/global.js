@@ -38,10 +38,21 @@ const GlobalStyles = createGlobalStyle`
     color: ${theme.color.light};
   }
 
+  h2 {
+    font-size: calc(2rem + 2vw);
+  }
+
   p, label {
     font-family: ${theme.font.sans};
   }
 
+  a {
+    transition: 200ms ease-in-out;
+  }
+
+  section { 
+    margin: 10rem 0;
+  }
 
   @keyframes wipe-enter {
     0% {

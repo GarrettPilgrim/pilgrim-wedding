@@ -10,15 +10,11 @@ const Registry = () => {
   return (
     <>
       <RegistryStyle>
-        <h2>Registry</h2>
-        <div className="link-container">
+        <div class="grid">
+          <h2>Registry</h2>
           <AnchorLink to="https://www.amazon.com/">Amazon</AnchorLink>
-        </div>
-        <div className="link-container">
           <AnchorLink to="https://www.target.com/">Target</AnchorLink>
         </div>
-        <FlowerTwo className="flower-two" />
-        <FlowerOne className="flower-one" />
       </RegistryStyle>
     </>
   );

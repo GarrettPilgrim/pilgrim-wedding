@@ -15,16 +15,19 @@ const Header = () => {
         <nav>
           <ul>
             <li>
+              <AnchorLink to="/#here">Date</AnchorLink>
+            </li>
+            <li>
               <AnchorLink to="/#here">Countdown</AnchorLink>
             </li>
             <li>
               <AnchorLink to="/#here">Detail</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#here">RSVP</AnchorLink>
+              <AnchorLink to="/#here">Registry</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#here">Registry</AnchorLink>
+              <AnchorLink to="/#here">RSVP</AnchorLink>
             </li>
           </ul>
         </nav>

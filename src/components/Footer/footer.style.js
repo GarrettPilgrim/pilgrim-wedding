@@ -6,14 +6,14 @@ const FooterStyle = styled.footer`
   margin-top: 6rem;
   padding: 8rem 0;
   background: radial-gradient(
-      ellipse at bottom right,
-      ${theme.color.primary} 50%,
-      transparent 50%
+      circle at bottom right,
+      ${theme.color.primary} 0%,
+      transparent 40%
     ),
     radial-gradient(
-      ellipse at bottom left,
-      ${theme.color.secondary} 50%,
-      transparent 50%
+      circle at bottom left,
+      ${theme.color.secondary} 0%,
+      transparent 40%
     );
   z-index: 10;
 

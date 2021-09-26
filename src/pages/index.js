@@ -12,6 +12,14 @@ const IndexPage = () => {
     <>
       <GlobalStyles />
       <Header />
+      <Animation direction="right">
+        <Section>
+          <h2>
+            Date <br />
+            <span> March 19, 2021</span>
+          </h2>
+        </Section>
+      </Animation>
       <Animation direction="left">
         <Countdown />
       </Animation>

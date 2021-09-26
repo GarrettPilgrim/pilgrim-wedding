@@ -1,45 +1,42 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
 
-const RegistryStyle = styled.div`
+const RegistryStyle = styled.section`
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: stretch;
-  align-items: center;
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: stretch;
+    align-items: center;
+  }
 
   h2 {
     grid-column: 1 / -1;
+    max-width: 60ch;
+    margin: 0 auto 5rem auto;
   }
 
   a {
-    padding: calc(50% - 2rem);
+    padding: 10rem 0;
+    margin: 1.4rem;
     font-size: 2rem;
     background: ${theme.color.lightTransparent};
     backdrop-filter: blur(1rem);
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-  }
-
-  .link-container {
     text-align: center;
   }
 
-  .link-container:first-of-type {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
+  a:hover {
+    background: ${theme.color.primary};
   }
 
-  .link-container:last-of-type {
-    grid-column: 2 / -1;
-    grid-row: 2 / 3;
+  .link-container {
   }
 
   .flower-one {
     position: relative;
     right: -5rem;
     top: -5rem;
-    grid-column: 2 / -1;
-    grid-row: 2 / 3;
     justify-self: end;
     width: calc(8rem + 20%);
     transform: scaleY(-1) rotate(-150deg);
@@ -51,8 +48,6 @@ const RegistryStyle = styled.div`
     position: relative;
     left: -5rem;
     top: -5rem;
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
     justify-self: start;
     width: calc(8rem + 20%);
     transform: rotate(0deg);
@@ -61,16 +56,12 @@ const RegistryStyle = styled.div`
   }
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr;
+  }
 
-    a:first-of-type {
-      grid-column: 1 / -1;
-      grid-row: 2 / 3;
-    }
-
-    a:last-of-type {
-      grid-column: 1 / -1;
-      grid-row: 3 / 4;
+  @media (max-width: 900px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
     }
   }
 `;

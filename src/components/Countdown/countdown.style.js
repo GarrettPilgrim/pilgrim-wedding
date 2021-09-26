@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
 
-const CountdownStyle = styled.div`
+const CountdownStyle = styled.section`
   margin: 6rem 0;
 
   .flex {
