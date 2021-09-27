@@ -14,20 +14,21 @@ const Header = () => {
         </div>
         <nav>
           <ul>
+            <button>x</button>
             <li>
-              <AnchorLink to="/#here">Date</AnchorLink>
+              <AnchorLink to="/#date">Date</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#here">Countdown</AnchorLink>
+              <AnchorLink to="/#countdown">Countdown</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#here">Detail</AnchorLink>
+              <AnchorLink to="/#details">Details</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#here">Registry</AnchorLink>
+              <AnchorLink to="/#registry">Registry</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#here">RSVP</AnchorLink>
+              <AnchorLink to="/#rsvp">RSVP</AnchorLink>
             </li>
           </ul>
         </nav>

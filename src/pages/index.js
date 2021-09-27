@@ -13,17 +13,20 @@ const IndexPage = () => {
       <GlobalStyles />
       <Header />
       <Animation direction="right">
+        <div id="date" />
         <Section>
           <h2>
             Date <br />
-            <span> March 19, 2021</span>
+            <span> March 19, 2022</span>
           </h2>
         </Section>
       </Animation>
       <Animation direction="left">
+        <div id="countdown" />
         <Countdown />
       </Animation>
       <Animation direction="right">
+        <div id="details" />
         <Section>
           <h2>Details</h2>
           <p>
@@ -35,9 +38,11 @@ const IndexPage = () => {
         </Section>
       </Animation>
       <Animation direction="left">
+        <div id="registry" />
         <Registry />
       </Animation>
-      <Footer></Footer>
+      <div id="rsvp" />
+      <Footer />
     </>
   );
 };

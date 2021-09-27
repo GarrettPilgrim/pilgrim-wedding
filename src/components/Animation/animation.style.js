@@ -2,6 +2,7 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 
 const AnimationStyle = styled.div`
+  overflow: hidden;
   @keyframes slide-in-right {
     0% {
       transform: translateX(100%);
