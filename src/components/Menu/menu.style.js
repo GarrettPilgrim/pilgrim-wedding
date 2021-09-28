@@ -2,18 +2,21 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 
 const MenuStyle = styled.div`
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
+  z-index: 90;
+
   nav {
-    position: fixed;
-    right: 1px;
-    top: 1px;
+    margin-top: 3rem;
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    z-index: 50;
   }
 
   ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     padding: 0;
     margin: 0 0 0 0;
@@ -24,8 +27,7 @@ const MenuStyle = styled.div`
     margin: 1rem;
   }
 
-  a,
-  button {
+  a {
     display: block;
     padding: 1.5rem 1rem;
     border: none;
@@ -36,25 +38,24 @@ const MenuStyle = styled.div`
 
   a:hover,
   a:active,
-  a:focus,
-  button:hover,
-  button:active,
-  button:focus {
+  a:focus {
     background: ${theme.color.primary};
     font-size: 110%;
     border: none;
   }
 
   @media (max-width: 900px) {
+    background: ${theme.color.lightTransparent};
+
     nav {
       writing-mode: initial;
-      background: ${theme.color.lightTransparent};
     }
 
     ul {
       display: flex;
       width: 50vw;
-      justify-items: stretch;
+      margin-top: 2rem;
+      justify-content: flex-start;
       align-items: stretch;
       flex-direction: column;
     }
@@ -68,11 +69,6 @@ const MenuStyle = styled.div`
     a {
       position: relative;
       width: 100%;
-    }
-
-    button {
-      display: block;
-      align-self: flex-end;
     }
   }
 `;

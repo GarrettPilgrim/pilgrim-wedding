@@ -3,6 +3,8 @@ import theme from "../../styles/theme";
 
 const RegistryStyle = styled.section`
   position: relative;
+  z-index: -1;
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -31,28 +33,6 @@ const RegistryStyle = styled.section`
   }
 
   .link-container {
-  }
-
-  .flower-one {
-    position: relative;
-    right: -5rem;
-    top: -5rem;
-    justify-self: end;
-    width: calc(8rem + 20%);
-    transform: scaleY(-1) rotate(-150deg);
-    fill: ${theme.color.secondary};
-    z-index: -1;
-  }
-
-  .flower-two {
-    position: relative;
-    left: -5rem;
-    top: -5rem;
-    justify-self: start;
-    width: calc(8rem + 20%);
-    transform: rotate(0deg);
-    fill: ${theme.color.primary};
-    z-index: -1;
   }
 
   @media (max-width: 600px) {
