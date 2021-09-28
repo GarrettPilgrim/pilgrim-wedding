@@ -11,10 +11,10 @@ const Registry = () => {
       <RegistryStyle>
         <div class="grid">
           <h2>Registry</h2>
-          <a href="https://www.amazon.com/" target="_blank">
+          <a href="https://www.amazon.com/" target="_blank" rel="noreferrer">
             Amazon
           </a>
-          <a href="https://www.target.com/" target="_blank">
+          <a href="https://www.target.com/" target="_blank" rel="noreferrer">
             Target
           </a>
         </div>
