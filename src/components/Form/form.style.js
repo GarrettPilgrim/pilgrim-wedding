@@ -20,25 +20,41 @@ const FormStyle = styled.div`
 
   form {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
   }
 
   label {
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 1.2rem;
-  }
-
-  label:last-child {
-    width: 2rem;
   }
 
   input {
     height: 1.8rem;
     margin: 0.4rem 0;
     border: none;
-    background: ${theme.color.light};
-    color: ${theme.color.dark};
+    background: ${theme.color.lightTransparent};
+    color: ${theme.color.light};
+  }
+
+  button {
+    grid-column: 1 / -1;
+    justify-self: end;
+    padding: 1rem 1.5rem;
+    border: none;
+    background: ${theme.color.lightTransparent};
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: ${theme.color.secondary};
+  }
+
+  @media (max-width: 500px) {
+    form {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 

@@ -3,7 +3,6 @@ import theme from "../../styles/theme";
 
 const RegistryStyle = styled.section`
   position: relative;
-  z-index: -1;
 
   .grid {
     display: grid;
@@ -28,8 +27,9 @@ const RegistryStyle = styled.section`
     text-align: center;
   }
 
-  a:hover {
-    background: ${theme.color.primary};
+  a:hover,
+  a:active {
+    background: ${theme.color.secondary};
   }
 
   .link-container {

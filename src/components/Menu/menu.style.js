@@ -2,16 +2,16 @@ import styled from "styled-components";
 import theme from "../../styles/theme";
 
 const MenuStyle = styled.div`
-  position: fixed;
-  right: 0;
-  top: 0;
-  transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
-  z-index: 90;
+  transition: 350ms ease-in-out;
 
   nav {
+    position: fixed;
+    right: 0;
+    top: 0;
     margin-top: 3rem;
     writing-mode: vertical-rl;
     text-orientation: sideways;
+    z-index: 90;
   }
 
   ul {
@@ -40,14 +40,21 @@ const MenuStyle = styled.div`
   a:active,
   a:focus {
     background: ${theme.color.primary};
-    font-size: 110%;
+    transform: scale(110%);
     border: none;
   }
 
   @media (max-width: 900px) {
+    position: fixed;
+    right: 0;
+    top: 0;
     background: ${theme.color.lightTransparent};
+    backdrop-filter: blur(1rem);
+    transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(100%)")};
+    z-index: 90;
 
     nav {
+      position: relative;
       writing-mode: initial;
     }
 
@@ -70,6 +77,16 @@ const MenuStyle = styled.div`
       position: relative;
       width: 100%;
     }
+  }
+
+  @media (max-width: 500px) {
+    ul {
+      width: 100vw;
+    }
+  }
+
+  ${
+    "" /* check to make sure the mobile menu doesn't hide the desktop menu on screen resize */
   }
 `;
 

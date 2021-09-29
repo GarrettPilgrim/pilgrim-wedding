@@ -29,13 +29,10 @@ const IndexPage = () => {
       <Animation direction="right">
         <div id="details" />
         <Section>
-          <h2>Details</h2>
-          <p>
-            some random default text to reperesnt this section for the time
-            being some random default text to reperesnt this section for the
-            time being some random default text to reperesnt this section for+
-            the time being
-          </p>
+          <h2>
+            Location <br />
+            <span> Memphis, TN</span>
+          </h2>
         </Section>
       </Animation>
       <Animation direction="left">

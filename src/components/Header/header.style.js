@@ -3,9 +3,11 @@ import img from "../../images/engaged.jpg";
 import theme from "../../styles/theme";
 
 const HeaderStyle = styled.header`
+  position: relative;
+
   .container {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,7 +48,7 @@ const HeaderStyle = styled.header`
     width: calc(5rem + 15vw);
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .img {
       background: 35% 100% / cover no-repeat url(${img});
       width: 70vw;

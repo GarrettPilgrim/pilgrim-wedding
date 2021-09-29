@@ -8,12 +8,12 @@ const FooterStyle = styled.footer`
   background: radial-gradient(
       circle at bottom right,
       ${theme.color.primary} 0%,
-      transparent 40%
+      transparent 30%
     ),
     radial-gradient(
       circle at bottom left,
       ${theme.color.secondary} 0%,
-      transparent 40%
+      transparent 30%
     );
   z-index: 10;
 
