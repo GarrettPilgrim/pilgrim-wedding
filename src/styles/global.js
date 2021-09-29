@@ -49,10 +49,6 @@ const GlobalStyles = createGlobalStyle`
       transform: scale(1, .025);
     }
   }
-
-  @media (prefers-reduced-motion: no-preference) {
-    
-  }
 `;
 
 export default GlobalStyles;
