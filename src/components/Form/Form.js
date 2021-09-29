@@ -38,7 +38,7 @@ const Form = () => {
                 required
               />
             </label>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </fieldset>
       </FormStyle>
