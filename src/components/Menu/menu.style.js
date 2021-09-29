@@ -88,10 +88,6 @@ const MenuStyle = styled.div`
       text-align: center;
     }
   }
-
-  ${
-    "" /* check to make sure the mobile menu doesn't hide the desktop menu on screen resize */
-  }
 `;
 
 export default MenuStyle;
