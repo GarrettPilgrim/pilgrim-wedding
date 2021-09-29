@@ -9,10 +9,12 @@ const SectionStyle = styled.section`
     max-width: 60ch;
   }
 
-  h2 {
-    justify-self: start;
-    margin: 8rem 0 0 0;
-    font-size: 2.6rem;
+  .full-width {
+    grid-column: 1 / -1;
+  }
+
+  span {
+    font-size: calc(1rem + 5vw);
   }
 `;
 

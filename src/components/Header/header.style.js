@@ -3,9 +3,11 @@ import img from "../../images/engaged.jpg";
 import theme from "../../styles/theme";
 
 const HeaderStyle = styled.header`
+  position: relative;
+
   .container {
     height: 100vh;
-    width: 100vw;
+    max-width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,34 +27,7 @@ const HeaderStyle = styled.header`
     padding: 1rem 2rem;
     margin: 0;
     font-size: 10vw;
-    z-index: 90;
-  }
-
-  nav {
-    writing-mode: vertical-rl;
-    text-orientation: sideways;
-    z-index: 100;
-  }
-
-  ul {
-    position: fixed;
-    right: 1px;
-    top: 1px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
-    margin: 0 1rem 0 0;
-    list-style: none;
-  }
-
-  li {
-  }
-
-  a {
-    padding: 1.5rem 1rem;
-    font-size: 1rem;
-    text-decoration: none;
+    z-index: 10;
   }
 
   svg {
@@ -62,7 +37,7 @@ const HeaderStyle = styled.header`
   .flower-one {
     position: absolute;
     top: 25%;
-    width: 10%;
+    width: calc(2rem + 8vw);
     transform: scaleY(-1);
   }
 
@@ -70,16 +45,16 @@ const HeaderStyle = styled.header`
     position: absolute;
     top: 0;
     right: 5%;
-    width: 20%;
+    width: calc(5rem + 15vw);
   }
 
-  @media (max-width: 450px) {
+  @media (max-width: 500px) {
     .img {
       background: 35% 100% / cover no-repeat url(${img});
       width: 70vw;
       height: 75vh;
     }
-  } ;
+  }
 `;
 
 export default HeaderStyle;
