@@ -14,8 +14,6 @@ const Form = () => {
             netlify-honeypot="bot-field"
             action="/success"
           >
-            <input type="hidden" name="bot-field" />
-            <input type="hidden" name="form-name" value="contact" />
             <label>
               First Name
               <input type="text" name="first-name" id="first-name" required />
