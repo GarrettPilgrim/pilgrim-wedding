@@ -4,7 +4,6 @@ import Header from "../components/Header/Header";
 import Section from "../components/Section/Section";
 import Countdown from "../components/Countdown/Countdown";
 import Animation from "../components/Animation/Animation";
-import Footer from "../components/Footer/Footer";
 import Registry from "../components/Registry/Registry";
 import GlobalStyles from "../styles/global";
 import Footer from "../components/Footer/Footer";

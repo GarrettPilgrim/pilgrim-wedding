@@ -83,6 +83,10 @@ const MenuStyle = styled.div`
     ul {
       width: 100vw;
     }
+
+    li {
+      text-align: center;
+    }
   }
 
   ${
