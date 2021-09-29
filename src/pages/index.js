@@ -1,10 +1,12 @@
 import React from "react";
+
 import Header from "../components/Header/Header";
 import Section from "../components/Section/Section";
 import Countdown from "../components/Countdown/Countdown";
-
+import Animation from "../components/Animation/Animation";
+import Footer from "../components/Footer/Footer";
+import Registry from "../components/Registry/Registry";
 import GlobalStyles from "../styles/global";
-import Anchor from "../components/Anchor/Anchor";
 import Footer from "../components/Footer/Footer";
 
 const IndexPage = () => {
@@ -12,15 +14,33 @@ const IndexPage = () => {
     <>
       <GlobalStyles />
       <Header />
-      <Countdown />
-      <Section
-        title="Details"
-        text="This is some basic starter text for a paragraph. Let us tell you a long winded story about us that you'll never actually read because you're only here for basic information about the wedding. Or perhaps you're a stalker trying to find out where one of us lives so you can watch us from your van."
-      ></Section>
-      <Section title="Registries">
-        <Anchor AnchorLink="https://www.amazon.com/" AnchorText="Amazon" />
-        <Anchor AnchorLink="https://www.target.com/" AnchorText="Target" />
-      </Section>
+      <Animation direction="right">
+        <div id="date" />
+        <Section>
+          <h2>
+            Date <br />
+            <span> March 19, 2022</span>
+          </h2>
+        </Section>
+      </Animation>
+      <Animation direction="left">
+        <div id="countdown" />
+        <Countdown />
+      </Animation>
+      <Animation direction="right">
+        <div id="details" />
+        <Section>
+          <h2>
+            Location <br />
+            <span> Memphis, TN</span>
+          </h2>
+        </Section>
+      </Animation>
+      <Animation direction="left">
+        <div id="registry" />
+        <Registry />
+      </Animation>
+      <div id="rsvp" />
       <Footer />
     </>
   );

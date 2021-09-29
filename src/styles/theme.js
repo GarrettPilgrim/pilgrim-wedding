@@ -7,6 +7,8 @@ const theme = {
     secondary: "#7A9B76",
     light: "#FBFEFB",
     dark: "#495867",
+    darkTransparent: "rgba(73, 88, 103, 0.5)",
+    lightTransparent: "rgba(251, 254, 251, 0.1)",
   },
   font: {
     serif: ['"Nixie One", serif'],
