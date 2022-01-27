@@ -38,7 +38,6 @@ const FormStyle = styled.div`
   }
 
   button {
-    grid-column: 2 / -1;
     justify-self: end;
     padding: 1rem 1.5rem;
     border: none;

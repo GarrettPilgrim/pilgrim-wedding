@@ -37,7 +37,9 @@ const Form = () => {
                 required
               />
             </label>
-            <p><em>RSVP by March 5</em></p>
+            <p>
+              <em>RSVP by March 5</em>
+            </p>
             <button type="submit">Submit</button>
           </form>
         </fieldset>
