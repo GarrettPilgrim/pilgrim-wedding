@@ -25,7 +25,13 @@ const GlobalStyles = createGlobalStyle`
   }
 
   h2 {
+    margin: 0;
     font-size: calc(2rem + 2vw);
+  }
+
+  h3 {
+    margin: 0;
+    font-size: calc(1.2rem + 1.2vw);
   }
 
   p, label {

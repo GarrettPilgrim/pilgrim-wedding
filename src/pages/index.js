@@ -22,20 +22,30 @@ const IndexPage = () => {
           </h2>
         </Section>
       </Animation>
-      <Animation direction="left">
-        <div id="countdown" />
-        <Countdown />
-      </Animation>
       <Animation direction="right">
         <div id="details" />
         <Section>
           <h2>
             Location <br />
-            <span> Memphis, TN</span>
+            <span>FedEx Event Center at Shelby Farms</span>
           </h2>
         </Section>
       </Animation>
       <Animation direction="left">
+        <div id="date" />
+        <Section>
+          <h2>
+            Ceremony at 5 pm
+            <br />
+          </h2>
+          <h3>Reception to follow</h3>
+        </Section>
+      </Animation>
+      <Animation direction="left">
+        <div id="countdown" />
+        <Countdown />
+      </Animation>
+      <Animation direction="right">
         <div id="registry" />
         <Registry />
       </Animation>

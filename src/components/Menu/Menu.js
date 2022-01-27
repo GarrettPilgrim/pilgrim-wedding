@@ -13,10 +13,10 @@ const Menu = ({ open }) => {
               <AnchorLink to="/#date">Date</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#countdown">Countdown</AnchorLink>
+              <AnchorLink to="/#details">Details</AnchorLink>
             </li>
             <li>
-              <AnchorLink to="/#details">Details</AnchorLink>
+              <AnchorLink to="/#countdown">Countdown</AnchorLink>
             </li>
             <li>
               <AnchorLink to="/#registry">Registry</AnchorLink>

@@ -4,7 +4,9 @@ import SectionStyle from "./section.style";
 const Section = ({ children }) => {
   return (
     <>
-      <SectionStyle>{children}</SectionStyle>
+      <SectionStyle>
+        <div>{children}</div>
+      </SectionStyle>
     </>
   );
 };
